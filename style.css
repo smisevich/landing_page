@@ -2,23 +2,204 @@ html, body {
     margin: 0;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-img {
+.hero,
+.information,
+.quote,
+.CTO,
+footer {
+    padding: 0 150px 0 150px;
+}
+
+
+/************************************************ 
+HERO SECTION 
+*************************************************/
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding-top: 15px;
+    padding-left: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.hero img {
     height: auto;
     width: 250px;
 }
 
-.hero {
+.hero,
+footer {
     background-color: #1f2937;
+}
+
+.hero2 {
+    display: flex;
+    padding: 80px 0 80px 0;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
 }
 
 .logo {
     color: #f9faf8;
     font-size: 24px;
+    margin-right: auto;
 }
 
-.hLink {
+.hLink,
+.heroP {
     color: #e5e7eb;
     font-size: 18px;
+    font-weight: 100;
+}
+
+.btn1 {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    padding: 8px 25px 8px 25px;
+    border-radius: 10px;
+}
+
+button:hover,
+.hLink:hover {
+    cursor: pointer;
+}
+
+
+/************************************************ 
+INFORMATION SECTION 
+*************************************************/
+
+.information {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+.information h2 {
+    text-align: center;
+    margin: 35px 0 50px 0;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 175px;
+    height: 215px;
+    border-radius: 10px;
+}
+
+.zone:hover {
+    box-shadow: 0 0 25px #1f2937;
+    cursor: pointer;
+}
+
+.zone div {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.tree {
+    width: 175px;
+    border-radius: 10px;
+}
+
+.zone p {
+    text-align: center;
+    color: #1f2937;
+}
+
+
+/************************************************ 
+QUOTE SECTION 
+*************************************************/
+
+.quote {
+    background-color: #e5e7eb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quoteText {
+    text-align: left;
+}
+
+.quoteAtt {
+    text-align: right;
+    font-weight: 700;
+}
+
+
+/************************************************ 
+CALL TO ACTION (CTO) SECTION 
+*************************************************/
+
+.blueZone {
+    background-color: #3882f6;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border-radius: 10px;
+    padding: 15px 50px 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blueZone button {
+    /* padding: 8px 25px 8px 25px; */
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #3882f6;
+    border: solid #f9faf8;
+    border-width: 2px;
+    color: #f9faf8;
+}
+
+.blueText h3 {
+    color: #f9faf8;
+}
+
+.blueText p {
+    color: #e5e7eb;
+}
+
+
+/************************************************ 
+CALL TO ACTION (CTO) SECTION 
+*************************************************/
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #f9faf8;
+    font-weight: 300;
 }
